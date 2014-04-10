@@ -1,0 +1,80 @@
+
+.container {
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+
+
+
+.button {
+	margin-bottom: 80px;
+}
+
+.gone {
+	background: red;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.toggle {
+	margin-bottom: 80px;
+}
+
+.nyc {
+	background-color: black;
+	color: white;
+	margin-bottom: 80px;
+}
+.nyc img {
+	opacity: .2;
+	-webkit-transition: all 4s ease;
+	transition: all 4s ease;
+}
+
+.colorbox {
+	text-align: center;
+	font-family: sans-serif;
+	margin-left: 35%;
+	margin-bottom: 80px;
+	width: 250px;
+	height: 250px;
+	border-radius: 18%;
+	background-color: tomato;
+}
+
+.crazybox {
+	margin-left: 30%;
+	margin-bottom: 80px;
+	width: 300px;
+	height: 300px;
+	/*border-radius: 18%*/;
+	background-color: orange;
+	-webkit-transition: all 4s ease;
+	transition: all 4s ease;
+}
+
+
+/*jQuery*/
+
+img.opacity {
+	opacity: 1;
+}
+
+.colorboxchange {
+	background-color: blue;
+	color: white;
+}
+
+.magnify {
+	width: 500px;
+	height: 100px;
+	background-color: green;
+}
+
+
+
+
+
+
+
