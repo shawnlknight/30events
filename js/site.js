@@ -1,7 +1,7 @@
 $(function() {
 
 //countdown button
-$(".button").on("click", function(event) {
+$(".button1").on("click", function(event) {
 	event.preventDefault();
 	var button = $(this);
 	// get the value from the number span, and subtract 
