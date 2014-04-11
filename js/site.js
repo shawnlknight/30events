@@ -1,5 +1,31 @@
 $(function() {
 
+// hide/show content
+$(".nav").click(function(event) {
+	event.preventDefault();
+	$("div").toggleClass("hide");
+	$("body").toggleClass("backgroundcolor");
+});
+
+//scroll function
+$(window).scroll(function() {
+	$("body").toggleClass("backgroundcolor2");
+});
+
+//mouse move function
+$("nav").mousemove(function() {
+	$(".bam").addClass("bam2");
+});
+
+$(window).mousedown(function() {
+	$(".bam").removeClass("bam2");
+});
+
+$(window).mouseup(function() {
+	$(".bam").addClass("bam2");
+});
+
+
 //countdown button
 $(".button1").on("click", function(event) {
 	event.preventDefault();
@@ -19,11 +45,11 @@ $(".button1").on("click", function(event) {
 });
 
 //toggle button
-$(".toggle").click(function(event) {
+$(".toggle").click(function() {
 	$("p").toggle("slow");
 });
 
-// Add opacity to picture of NYC
+// Remove opacity to picture of NYC
 $(".nyc").click(function(event) {
 	event.preventDefault();
 
@@ -38,6 +64,11 @@ $(".colorbox").click(function(event) {
 	$(".colorbox").toggleClass("colorboxchange");
 });
 
+//slide away function
+$(".slide").click(function() {
+	$(this).slideUp();
+})
+
 //change background color when scrolling
 $(".crazybox").hover(function(event) {
 	event.preventDefault();
@@ -47,11 +78,31 @@ $(".crazybox").hover(function(event) {
 });
 
 //hover to make text vanish
-$(".hover").hover(function(event) {
+$(".hover1").hover(function(event) {
 	event.preventDefault();
-	$("h1").fadeOut( 100 );
+	$("h5").fadeOut( 100 );
 	
 })
+
+//multiply words
+$(".multiply").click(function() {
+	$(".multiply").append("<div>MORE!</div>");
+});
+
+//shuffle box
+$(".right").click(function() {
+  $(".block").animate({ "left": "+=50px" }, "slow" );
+});
+ 
+$(".left").click(function(){
+  $(".block").animate({ "left": "-=50px" }, "slow" );
+});
+
+
+
+
+
+
 
 
 
