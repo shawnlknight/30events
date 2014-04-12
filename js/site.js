@@ -1,10 +1,16 @@
 $(function() {
 
+//Alert for when page is opened
+$("body").each(function() {
+	alert("Hello There!");
+});
+
 // hide/show content
 $(".nav").click(function(event) {
 	event.preventDefault();
 	$("div").toggleClass("hide");
 	$("body").toggleClass("backgroundcolor");
+	alert("Banana!!!");
 });
 
 //scroll function
@@ -12,7 +18,7 @@ $(window).scroll(function() {
 	$("body").toggleClass("backgroundcolor2");
 });
 
-//mouse move function
+//mouse move functions
 $("nav").mousemove(function() {
 	$(".bam").addClass("bam2");
 });
@@ -56,12 +62,14 @@ $(".nyc").click(function(event) {
 	console.log($(this));
 
 	$("img").toggleClass("opacity");
+	alert("Good Morning");
 });
 
 //Change box color
 $(".colorbox").click(function(event) {
 	event.preventDefault();
 	$(".colorbox").toggleClass("colorboxchange");
+	alert("STOP THAT!");
 });
 
 //slide away function
@@ -94,10 +102,17 @@ $(".right").click(function() {
   $(".block").animate({ "left": "+=50px" }, "slow" );
 });
  
-$(".left").click(function(){
+$(".left").click(function() {
   $(".block").animate({ "left": "-=50px" }, "slow" );
 });
 
+//Change background to blue
+$(".blue").click(function(event) {
+	event.preventDefault();
+	$("div").toggleClass("hide");
+	$("body").toggleClass("blue");
+	alert("I'm a smurf!!!");
+});
 
 
 
