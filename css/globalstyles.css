@@ -97,6 +97,14 @@ li {
 
 /*jQuery*/
 
+.nav2 {
+	background: pink;
+}
+
+.hide {
+	display: none;
+}
+
 .hide div {
 	display:none;
 }
@@ -111,6 +119,15 @@ li {
 
 .bam2 {
 	display:inline-block;
+}
+
+.value2color {
+	background-color: #2bd223;
+}
+
+.value3color {
+	background-color: #b8a392;
+
 }
 
 img.opacity {
@@ -141,6 +158,9 @@ img.opacity {
 	margin-bottom: 10%;
 }
 
+.vail {
+	opacity: .3;
+}
 
 .blue {
 	text-align: center;

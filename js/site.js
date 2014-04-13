@@ -9,9 +9,21 @@ $("body").each(function() {
 $(".nav").click(function(event) {
 	event.preventDefault();
 	$("div").toggleClass("hide");
+	$("nav").addClass("nav2");
 	$("body").toggleClass("backgroundcolor");
 	alert("Banana!!!");
 });
+
+//value 2 color
+$(".value2").click(function() {
+	$("body").addClass("value2color");
+});
+
+//value 3 color
+$(".value3").click(function() {
+	$("body").addClass("value3color");
+});
+
 
 //scroll function
 $(window).scroll(function() {
@@ -88,8 +100,7 @@ $(".crazybox").hover(function(event) {
 //hover to make text vanish
 $(".hover1").hover(function(event) {
 	event.preventDefault();
-	$("h5").fadeOut( 100 );
-	
+	$("h5").fadeOut( 100 );	
 })
 
 //multiply words
@@ -106,6 +117,27 @@ $(".left").click(function() {
   $(".block").animate({ "left": "-=50px" }, "slow" );
 });
 
+//mice
+$(".mice").mousedown(function() {
+	$(".mice").append("<div>Mice</div>");
+});
+
+//vail
+$(".vail").click(function() {
+	$(".vail").removeClass("vail");
+});
+
+//ghoul
+$(".ghoul").click(function() {
+	$(".ghoul").addClass("hide");
+	alert("Where did it go?");
+});
+
+//burger and fries
+$(".burger").click(function() {
+	$(".burger").append("<h1>Yum!</h1>");
+});
+
 //Change background to blue
 $(".blue").click(function(event) {
 	event.preventDefault();
@@ -113,11 +145,6 @@ $(".blue").click(function(event) {
 	$("body").toggleClass("blue");
 	alert("I'm a smurf!!!");
 });
-
-
-
-
-
 
 
 
